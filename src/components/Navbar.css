@@ -1,0 +1,22 @@
+.Navbar {
+    position:fixed;
+    height:100vh;
+    min-width:150px;
+    z-index:10;
+    text-align:center;
+    box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+}
+.Navbar ul {
+    padding: 0;
+}
+.Navbar li {
+    list-style-type:none;
+    cursor:pointer;
+    padding: 5px;
+    transition:all 0.5s;
+    letter-spacing: 1px;
+    box-shadow:0px 15px 30px rgba(0,0,0,0.1);
+}
+.Navbar li:hover{
+    background-color:rgb(56, 56, 56);
+}
