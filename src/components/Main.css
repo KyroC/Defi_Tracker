@@ -1,0 +1,10 @@
+.Content {
+    position: relative;
+    margin-left: 200px;
+}
+tbody {
+    text-align:right
+}
+.Coin_name {
+    text-align:left;
+}
