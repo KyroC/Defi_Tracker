@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Main.css'
+import Searchbar from './Searchbar.js';
 function Main() {
     const [items, setItems] = useState([]);
     const coins = ["bitcoin","ethereum"];
@@ -13,11 +14,13 @@ function Main() {
     },[])
     return (
         <div className="Content">
+            <Searchbar />
             <h2>Coin prices by Market Cap</h2>
             <table>
                 <thead>
                     <tr>
-                        <th>Name</th>
+                        <th>#</th>
+                        <th className="Coin_name">Name</th>
                         <th>Price</th>
                         <th>Mcap</th>
                         <th>1h Change</th>
@@ -29,7 +32,8 @@ function Main() {
                     {items.map(item => {
                         return(
                             <tr key={item.id}>
-                                <td className="Coin_name">{item.name}</td>
+                                <td>{item.market_cap_rank}</td>
+                                <td className="Coin_name"><img src={item.image} className="icon" />{item.name}</td>
                                 <td>${item.current_price.toLocaleString(undefined,{maximumFractionDigist:2})}</td>
                                 <td>${item.market_cap.toLocaleString(undefined,{maximumFractionDigist:2})}</td>
                                 <td>{item.price_change_percentage_1h_in_currency.toFixed(1)}%</td>
