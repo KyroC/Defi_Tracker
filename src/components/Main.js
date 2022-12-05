@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './Main.css'
-import Searchbar from './Searchbar.js';
 import { Link } from 'react-router-dom';
 function Main() {
     const [items, setItems] = useState([]);
-    const coins = ["bitcoin","ethereum"];
-    const currency = "usd"
 //get coin data by descending market cap (i.e Top market cap)
     useEffect(() => {
         fetch(`https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false&price_change_percentage=1h%2C24h%2C7d%2C30d`)
@@ -15,7 +12,6 @@ function Main() {
     },[])
     return (
         <div className="Content">
-            <Searchbar />
             <h2>Coin prices by Market Cap</h2>
             <table>
                 <thead>
@@ -35,7 +31,7 @@ function Main() {
                             <tr key={item.id}>
                                 <td>{item.market_cap_rank}</td>
                                 <td className="Coin_name"><img src={item.image} className="icon" />
-                                    <Link to={`/coin/${item.name}`}>
+                                    <Link to={`/coin/${item.id}`}>
                                         {item.name}
                                     </Link>
                                 </td>

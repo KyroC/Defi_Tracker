@@ -1,4 +1,18 @@
-.Coin {
+@charset "UTF-8";
+
+.coin {
     position: relative;
     margin-left: 200px;
+    width:calc(100vw - 250px) !important;
+}
+.basic-info {
+    display:inline-grid;
+    grid-template-columns: 1fr 2fr;
+    width:calc(100vw - 250px) !important;
+    font-size: 10px;
+}
+.data {
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }

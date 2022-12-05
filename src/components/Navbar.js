@@ -6,7 +6,7 @@ function Navbar() {
     <div className="Navbar">
       <ul> Dashboards
         <li>
-
+      
             Home
 
           </li>
