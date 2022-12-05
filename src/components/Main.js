@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Main.css'
 import Searchbar from './Searchbar.js';
+import { Link } from 'react-router-dom';
 function Main() {
     const [items, setItems] = useState([]);
     const coins = ["bitcoin","ethereum"];
@@ -33,7 +34,11 @@ function Main() {
                         return(
                             <tr key={item.id}>
                                 <td>{item.market_cap_rank}</td>
-                                <td className="Coin_name"><img src={item.image} className="icon" />{item.name}</td>
+                                <td className="Coin_name"><img src={item.image} className="icon" />
+                                    <Link to={`/coin/${item.name}`}>
+                                        {item.name}
+                                    </Link>
+                                </td>
                                 <td>${item.current_price.toLocaleString(undefined,{maximumFractionDigist:2})}</td>
                                 <td>${item.market_cap.toLocaleString(undefined,{maximumFractionDigist:2})}</td>
                                 <td>{item.price_change_percentage_1h_in_currency.toFixed(1)}%</td>
