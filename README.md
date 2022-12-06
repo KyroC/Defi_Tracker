@@ -3,6 +3,11 @@
 - Made with React 
 - Data from Coingecko's API
 
-## 1/12/2022
+Features:
 - Added fetch API based on descending coin MCAP
 - Added Table 
+- Added Route to specific coin pages
+- Added basic information
+
+To do:
+Graph showing coin prices over time
