@@ -15,7 +15,7 @@ function Graph() {
             (result) => setSevenDays(result["prices"]))
       },[])
       const data = {
-        labels:  sevenDays.map(day => new Intl.DateTimeFormat('en-US', {year: 'numeric', month: '2-digit',day: '2-digit', hour: '2-digit', minute: '2-digit', second: '2-digit'}).format(day[0])),
+        labels:  sevenDays.map(day => new Intl.DateTimeFormat('en-US', {year: 'numeric', month: '2-digit',day: '2-digit'}).format(day[0])),
         datasets: [
           {
             label: "Coin Price",
