@@ -4,12 +4,12 @@ import 'chart.js/auto';
 import { Line } from 'react-chartjs-2';
 
 function Graph() {
-    
+    let {coinName} = useParams();
 
       const [sevenDays,setSevenDays ] = useState([])
       const [allPrices, setAllPrice ] = useState([])
       useEffect(() => {
-        fetch('https://api.coingecko.com/api/v3/coins/bitcoin/market_chart?vs_currency=usd&days=7&interval=hourly')
+        fetch(`https://api.coingecko.com/api/v3/coins/${coinName}/market_chart?vs_currency=usd&days=7&interval=hourly`)
         .then(res=>res.json())
         .then(
             (result) => setSevenDays(result["prices"]))
