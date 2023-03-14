@@ -9,7 +9,7 @@ function Graph() {
       const [sevenDays,setSevenDays ] = useState([])
       const [allPrices, setAllPrice ] = useState([])
       useEffect(() => {
-        fetch(`https://api.coingecko.com/api/v3/coins/${coinName}/market_chart?vs_currency=usd&days=7&interval=hourly`)
+        fetch(`https://api.coingecko.com/api/v3/coins/${coinName}/market_chart?vs_currency=usd&days=730&interval=daily`)
         .then(res=>res.json())
         .then(
             (result) => setSevenDays(result["prices"]))

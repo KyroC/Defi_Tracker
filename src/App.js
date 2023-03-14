@@ -10,9 +10,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Searchbar />
       <BrowserRouter>
+        <Navbar />
+        <Searchbar />
         <Routes>
           <Route path="/" element={<Main />} />
           <Route path="/coin/:coinName" element={<Coin />} />

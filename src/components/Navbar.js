@@ -5,13 +5,9 @@ function Navbar() {
   return (
     <div className="Navbar">
       <ul> Dashboards
-        <li>
-      
-            Home
-
-          </li>
-        <li>Wallet</li>
-        <li>Market</li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/wallet">Wallet</Link></li>
+        <li><Link to="/market">Market</Link></li>
       </ul>
     </div>
   );
