@@ -10,4 +10,4 @@ Features:
 - Added basic information
 
 To do:
-Graph showing coin prices over time
+Graph showing coin prices over time (done)
