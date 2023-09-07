@@ -1,23 +1,23 @@
 
 import Navbar from './components/Navbar.js';
-import Main from './components/Main.js';
+import Markets from './components/Markets.js';
 import Coin from './components/Coin.js';
 import Searchbar from './components/Searchbar.js';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+
 
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
-        <Navbar />
-        <Searchbar />
-        <Routes>
-          <Route path="/" element={<Main />} />
-          <Route path="/coin/:coinName" element={<Coin />} />
-        </Routes>
-      </BrowserRouter>
+        <BrowserRouter>
+          <Navbar />
+          <Routes>
+            <Route path="/markets" element={<Markets />} />
+            <Route path="/coin/:coinName" element={<Coin />} />
+          </Routes>
+        </BrowserRouter>
     </div>
   );
 }
