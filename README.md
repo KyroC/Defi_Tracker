@@ -2,6 +2,7 @@
 
 - Made with React 
 - Data from Coingecko's API
+- Added MUI
 
 Features:
 - Added fetch API based on descending coin MCAP
@@ -11,3 +12,4 @@ Features:
 
 To do:
 Graph showing coin prices over time (done)
+
