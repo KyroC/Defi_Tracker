@@ -1,0 +1,18 @@
+
+.Content {
+    position: relative;
+    margin-left: 270px;
+}
+.Coin_name {
+    text-align:left;
+}
+table {
+    border-style:solid;
+    border-radius: 15px;
+    width:calc(100vw - 300px) !important;
+    text-align:right;
+}
+.icon {
+    height:28px;
+    width:28px;
+}
