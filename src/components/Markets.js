@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Markets.css'
 import { Link } from 'react-router-dom';
-function Main() {
+function Market() {
     const [items, setItems] = useState([]);
 //get coin data by descending market cap (i.e Top market cap)
     useEffect(() => {
@@ -63,4 +63,4 @@ function Main() {
     )
 }
 
-export default Main;
+export default Market;
