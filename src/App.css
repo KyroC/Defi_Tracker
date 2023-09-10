@@ -5,8 +5,5 @@ body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 	color: #aaa;
-    
-}
-.App {
-    display: inline-grid;
+    margin:0;
 }
