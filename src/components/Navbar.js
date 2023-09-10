@@ -1,6 +1,6 @@
 import { Drawer, Divider, List, ListItem} from "@mui/material"
 import { Link } from 'react-router-dom';
-import DeleteIcon from '@mui/icons-material/Delete';
+import QueryStatsOutlinedIcon from '@mui/icons-material/QueryStatsOutlined';
 
 let drawerWidth = 240
 
@@ -15,19 +15,25 @@ function Navbar(){
         variant = "permanent"
         anchor = "left"
         >
-        <DeleteIcon />
+        <QueryStatsOutlinedIcon />
+        Defi Wallet
        <Divider />
        <List>
-       <ListItem key="Dashboard">
-          Dashboard
+        <ListItem key="Dashboard">
+          <Link to ={`/`}>
+            Dashboard
+          </Link>
         </ListItem>
+
         <ListItem key="Markets">
           <Link to={`/Markets`}>
           Markets
           </Link>
         </ListItem>
         <ListItem key="My Accounts">
-          My Accounts
+          <Link to={`/Wallets`}>
+            My Accounts
+          </Link>
         </ListItem>
        </List>
       </Drawer>
