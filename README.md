@@ -12,4 +12,5 @@ Features:
 
 To do:
 Graph showing coin prices over time (done)
+Use Alchemy API for Defi data
 
