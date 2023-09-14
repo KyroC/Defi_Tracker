@@ -13,4 +13,7 @@ Features:
 To do:
 Graph showing coin prices over time (done)
 Use Alchemy API for Defi data
+Create search bar input to track wallet
+Choose and set a default wallet
+
 
