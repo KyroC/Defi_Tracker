@@ -12,7 +12,6 @@ function Topbar(){
         }}>
             <Toolbar
                 sx={{
-                   
                 }}>
             </Toolbar>
         </AppBar>
