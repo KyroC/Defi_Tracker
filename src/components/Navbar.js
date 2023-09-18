@@ -30,8 +30,8 @@ function Navbar(){
           Markets
           </Link>
         </ListItem>
-        <ListItem key="My Accounts">
-          <Link to={`/Wallets`}>
+        <ListItem key="DEX">
+          <Link to={`/Dex`}>
             My Accounts
           </Link>
         </ListItem>
